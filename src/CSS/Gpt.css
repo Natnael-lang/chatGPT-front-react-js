@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.chat-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(230, 227, 227);
+   min-height: 100vh;
+   padding-top: 50px;
+   padding-left: 50px;
+   padding-right: 50px;
+   padding-bottom: 60px;
+   
+}
+.chat-body{
+
+    background-color: rgb (128, 128, 128);
+    height: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 9px;
+    padding: 10px;
+    
+}
+.chat-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(86, 86, 136);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 50px;
+    
+}
+button{
+    background-color: rgb(86, 86, 136);
+    outline: none;
+    border: none;
+    margin: 20px;
+}
+.famoon{
+    width: 30px;
+    height: 30px;
+}
+.chat-message {
+    max-width: calc(100% - 60px);   
+    padding: 10px;
+    align-self: end;
+    background-color: rgb (128, 128, 128);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 9px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.chat-footer {
+    position: fixed;
+    bottom: 10px;
+    left: 50px;
+    right: 50px;
+    background-color: rgb(238, 238, 247);
+    min-height: 50px; /* Minimum height */
+    padding: 9px;
+    transition: height 0.2s; /* Smooth transition */
+}
+
+.search-input {
+    width: 100%;
+    border-radius: 10px;
+    border-color: rgb(166, 167, 168);
+    outline: 2px blue solid;
+    border-width: 1px;
+    font-size: 22px;
+    color: rgb(97, 95, 95);
+    resize: none; /* Disable manual resizing */
+    min-height: 50px; /* Minimum height */
+    overflow: hidden; /* Hide overflow */
+}
+.search-input::placeholder{
+    
+}
