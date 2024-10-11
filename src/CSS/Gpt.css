@@ -56,28 +56,75 @@ button{
     padding: 10px;
 }
 .chat-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
-    bottom: 10px;
+    bottom:0;
     left: 50px;
     right: 50px;
-    background-color: rgb(238, 238, 247);
-    min-height: 50px; /* Minimum height */
-    padding: 9px;
-    transition: height 0.2s; /* Smooth transition */
+    background-color:white;
+    min-height: 30px; /* Minimum height */
+    transition: height 0.2s;
+    border-radius: 10px; 
 }
 
 .search-input {
-    width: 100%;
-    border-radius: 10px;
-    border-color: rgb(166, 167, 168);
-    outline: 2px blue solid;
-    border-width: 1px;
-    font-size: 22px;
-    color: rgb(97, 95, 95);
-    resize: none; /* Disable manual resizing */
-    min-height: 50px; /* Minimum height */
-    overflow: hidden; /* Hide overflow */
+    width: 100%; 
+    border-radius: 10px 0 0 10px; 
+    border: 1px solid rgb(166, 167, 168); 
+    outline: none; 
+    font-size: 22px; 
+    color: rgb(97, 95, 95); 
+    resize: none; 
+    padding-left: 25px; 
+    padding-top:10px; 
+    padding-bottom:10px;
+    padding-right: 100px;
+    overflow: hidden; 
+    box-sizing: border-box; 
+    min-height: 50px; 
 }
-.search-input::placeholder{
+
+.search-form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height:100%;
+    position: relative;
+}
+.submit-button {
+    margin: 0;
+    background-color: rgb(86, 86, 136);
+    border: none;
+    border-radius: 0 10px 10px 0; 
+    padding: 10px 20px; 
+    color: white; 
+    cursor: pointer;
+    position: absolute;
+    right:0;
+    bottom:7px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+.submit-button:disabled {
+    background-color: gray; 
+}
+
+.chat-body p {
+     margin-bottom: 40px;
+    word-wrap: break-word; 
+    white-space: pre-wrap; 
+    padding: 10px;
+    background-color: rgb(128, 128, 128); 
+    border: 1px solid rgb(179, 174, 174); 
+    border-radius: 9px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: block; 
+    max-width: fit-content; 
+
     
+
+
+
 }
